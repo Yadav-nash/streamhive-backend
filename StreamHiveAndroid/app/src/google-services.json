@@ -1,0 +1,23 @@
+{
+  "project_info": {
+    "project_number": "000000000000",
+    "project_id": "streamhive-placeholder",
+    "storage_bucket": "streamhive-placeholder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:000000000000:android:placeholder",
+        "android_client_info": {
+          "package_name": "com.streamhive.app"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyDttvQmFaZa_oIkQaFzt7R7R6XfH73GN50"
+        }
+      ]
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">StreamHive</string>
+    <string name="admob_app_id">ca-app-pub-5874084438788994~1477991711</string>
+    <string name="admob_banner_unit">ca-app-pub-5874084438788994/4365408302</string>
+    <string name="admob_interstitial_unit">ca-app-pub-5874084438788994/3805606303</string>
+    <string name="admob_rewarded_unit">ca-app-pub-5874084438788994/5697272479</string>
+</resources>

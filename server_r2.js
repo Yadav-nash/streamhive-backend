@@ -3,7 +3,7 @@ import "dotenv/config";
 import express from "express";
 import cors from "cors";
 import morgan from "morgan";
-import { S3Client, ListObjectsV2Command, PutObjectCommand, HeadObjectCommand } from "@aws-sdk/client-s3";
+import { S3Client, ListObjectsV2Command, PutObjectCommand, HeadObjectCommand, GetObjectCommand } from "@aws-sdk/client-s3";
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 import { nanoid } from "nanoid";
 
@@ -102,6 +102,21 @@ app.get("/v1/files", async (_req, res) => {
   } catch (e) {
     console.error(e);
     return res.status(500).json({ error: "list_failed" });
+  }
+});
+
+app.get("/v1/files/presign-get", async (req, res) => {
+  try {
+    const key = req.query.key;
+    if (!key || typeof key !== "string") {
+      return res.status(400).json({ error: "missing_key" });
+    }
+    const getCmd = new GetObjectCommand({ Bucket: R2_BUCKET, Key: key });
+    const url = await getSignedUrl(s3, getCmd, { expiresIn: 3600 });
+    return res.json({ url, expiresIn: 3600 });
+  } catch (e) {
+    console.error(e);
+    return res.status(500).json({ error: "presign_get_failed" });
   }
 });
 
