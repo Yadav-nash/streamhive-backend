@@ -20,3 +20,12 @@
    - Add your environment variables.
 
 5. Use the Render URL as your base URL in the Android app.
+
+## Local Development
+
+1. Create `.env` at project root (already added with your values). Review and adjust if needed.
+2. Install deps and run:
+   - `npm install`
+   - `npm start`
+3. Backend will run on http://localhost:8080
+4. In Android emulator, use `http://10.0.2.2:8080/` as `BACKEND_BASE_URL`.
