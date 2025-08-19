@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "998535525634",
+    "project_id": "streamhive-e7646",
+    "storage_bucket": "streamhive-e7646.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998535525634:android:2c7263e6d4cb1211c77e1b",
+        "android_client_info": {
+          "package_name": "com.streamhive.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998535525634-ljjcuh8se4qqu0jmorsvr498l6k4vl87.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvj1suNThBF_2bTHOA5kzzSD6kVvOucmY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "998535525634-ljjcuh8se4qqu0jmorsvr498l6k4vl87.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
